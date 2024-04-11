@@ -21,8 +21,8 @@ const Todo = () => {
         selectedRowKeys,
         onChange: onSelectChange,
     };
-
-
+ 
+//columns for the table
     const columns = [
         {
             key: '1',
@@ -40,6 +40,7 @@ const Todo = () => {
             dataIndex: 'status',
         },
         {
+
             key: '4',
             title: 'Action',
             render: (record) => {
