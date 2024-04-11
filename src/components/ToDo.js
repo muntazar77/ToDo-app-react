@@ -9,10 +9,9 @@ const Todo = () => {
     const hasSelected = selectedRowKeys.length > 0;
     const [isEditing, setIsEditing] = useState(false);
     const [editingTodo, setEditingTodo] = useState(null);
-
-
     const [data, setData] = useState(Data);
 
+    //this function will select the row
     const onSelectChange = (newSelectedRowKeys) => {
         console.log('selectedRowKeys changed: ', newSelectedRowKeys);
         setSelectedRowKeys(newSelectedRowKeys);
